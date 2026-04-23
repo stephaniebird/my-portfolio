@@ -81,9 +81,10 @@ export default function Home() {
               Hello.
             </h2>
             <p className="font-serif text-[18px] font-light text-[#020206] leading-normal w-[530px]">
-              Surprise, surprise, you found another product designer. And you
-              guessed it — I freaking love design systems, AI workflows, and
-              helping enterprise companies focus on human-centered design.
+              I've watched real humans use real software in real time and let me
+              tell you — we need all the help we can get. That's where I come
+              in. Design systems, AI workflows, and a borderline obsessive
+              interest in how people actually do their jobs.
             </p>
           </div>
           <div className="flex gap-3 pt-2 shrink-0">
