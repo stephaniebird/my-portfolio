@@ -76,15 +76,17 @@ export default function Home() {
       {/* ── Hero ── */}
       <section className="bg-white">
         <div className="max-w-6xl mx-auto px-8 py-20 flex items-start justify-between gap-12">
-          <div className="max-w-sm">
-            <h2 className="font-serif text-[56px] font-normal text-[#FF2900] mb-5 leading-normal">
-              Hello.
+          <div>
+            <h2 className="font-serif text-[56px] font-normal text-[#FF2900] mb-5 leading-normal whitespace-nowrap">
+              Senior Product Designer
             </h2>
-            <p className="font-serif text-[18px] font-light text-[#020206] leading-normal w-[530px]">
-              I've watched real humans use real software in real time and let me
-              tell you — we need all the help we can get. That's where I come
-              in. Design systems, AI workflows, and a borderline obsessive
-              interest in how people actually do their jobs.
+            <p className="font-serif text-[18px] font-light text-[#020206] leading-normal w-full">
+              8+ years designing complex enterprise tools people actually have to
+              use every day — logistics platforms, fintech systems, IoT
+              workflows. I specialize in design systems, accessibility, and
+              making dense operational software feel learnable. I've sat in call
+              centers, shadowed dispatchers, and watched real users wrestle with
+              real software. That's where the good design decisions come from.
             </p>
           </div>
           <div className="flex gap-3 pt-2 shrink-0">
