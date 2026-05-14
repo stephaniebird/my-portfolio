@@ -25,13 +25,13 @@ export default function Prestige() {
       <Nav />
 
       {/* ── Hero ── */}
-      <section className="bg-white pt-16 pb-0">
+      <section className="bg-white pt-8 md:pt-16 pb-0">
         <div className="max-w-6xl mx-auto px-8">
-          <div className="flex items-end justify-between gap-8 mb-12">
-            <h2 className="font-serif text-[48px] font-bold text-[#020206] leading-[54px] max-w-[680px]">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 md:gap-8 mb-8 md:mb-12">
+            <h2 className="font-serif text-[28px] md:text-[48px] font-bold text-[#020206] leading-tight md:leading-[54px] max-w-[680px]">
               Unifying six tools into one workflow for a $1.1B collections operation
             </h2>
-            <div className="text-right shrink-0">
+            <div className="md:text-right shrink-0">
               <p className="link-label text-[#FF2900]">Prestige Financial Services</p>
               <p className="link-label text-[#FF2900]">UX Researcher &amp; Designer</p>
             </div>
@@ -112,7 +112,7 @@ export default function Prestige() {
       </div>
 
       {/* ── Screenshot 1 ── */}
-      <div className="mx-auto" style={{ width: "954px", maxWidth: "100%", paddingLeft: "40px", paddingRight: "40px" }}>
+      <div className="w-full max-w-[954px] mx-auto px-4 md:px-10">
         <ScrollableImage
           src="/images/prestige-study-01.png"
           alt="Prestige case management application UI"
@@ -162,7 +162,7 @@ export default function Prestige() {
       </div>
 
       {/* ── Screenshot 2 ── */}
-      <div className="mx-auto" style={{ width: "954px", maxWidth: "100%", paddingLeft: "40px", paddingRight: "40px" }}>
+      <div className="w-full max-w-[954px] mx-auto px-4 md:px-10">
         <ScrollableImage
           src="/images/prestige-study-02.png"
           alt="Prestige agent workflow UI with Coraline Jones account"
@@ -197,7 +197,7 @@ export default function Prestige() {
       </div>
 
       {/* ── Screenshot 3 ── */}
-      <div className="mx-auto" style={{ width: "954px", maxWidth: "100%", paddingLeft: "40px", paddingRight: "40px" }}>
+      <div className="w-full max-w-[954px] mx-auto px-4 md:px-10">
         <ScrollableImage
           src="/images/prestige-study-03.png"
           alt="Prestige refined workflow design"
@@ -226,7 +226,7 @@ export default function Prestige() {
         </section>
 
         {/* Metadata */}
-        <dl className="grid grid-cols-[auto_1fr] gap-x-8 gap-y-3 pt-4 border-t border-[#D0D0D0]">
+        <dl className="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-x-8 gap-y-3 pt-4 border-t border-[#D0D0D0]">
           {metadata.map((item) => (
             <React.Fragment key={item.label}>
               <dt className="font-sans text-[12px] font-bold uppercase tracking-[1.6px] text-[#020206]">

@@ -75,12 +75,12 @@ export default function Home() {
 
       {/* ── Hero ── */}
       <section className="bg-white">
-        <div className="max-w-6xl mx-auto px-8 py-20 flex items-start justify-between gap-12">
+        <div className="max-w-6xl mx-auto px-8 py-12 md:py-20 flex flex-col md:flex-row md:items-start md:justify-between gap-8 md:gap-12">
           <div>
-            <h2 className="font-serif text-[56px] font-normal text-[#FF2900] mb-5 leading-normal whitespace-nowrap">
+            <h2 className="font-serif text-[36px] md:text-[56px] font-normal text-[#FF2900] mb-5 leading-tight md:leading-normal md:whitespace-nowrap">
               Senior Product Designer
             </h2>
-            <p className="font-serif text-[18px] font-light text-[#020206] leading-normal w-full">
+            <p className="font-serif text-[16px] md:text-[18px] font-light text-[#020206] leading-normal w-full">
               8+ years designing complex enterprise tools people actually have to
               use every day — logistics platforms, fintech systems, IoT
               workflows. I specialize in design systems, accessibility, and
@@ -89,7 +89,7 @@ export default function Home() {
               real software. That's where the good design decisions come from.
             </p>
           </div>
-          <div className="flex gap-3 pt-2 shrink-0">
+          <div className="flex gap-3 md:pt-2 shrink-0">
             <a
               href="/resume"
               className="px-6 py-2 text-xs tracking-[0.15em] uppercase font-semibold bg-[#FF2900] text-white rounded-full hover:bg-[#cc2000] transition-colors"

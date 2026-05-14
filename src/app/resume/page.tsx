@@ -88,11 +88,11 @@ export default function Resume() {
       <Nav />
 
       <main className="bg-white">
-        <div className="max-w-[820px] mx-auto px-8 pt-16 pb-20">
+        <div className="max-w-[820px] mx-auto px-4 md:px-8 pt-12 md:pt-16 pb-20">
 
           {/* ── Header ── */}
           <div className="mb-8">
-            <h1 className="font-serif text-[52px] font-bold text-[#FF2900] leading-tight mb-2">
+            <h1 className="font-serif text-[36px] md:text-[52px] font-bold text-[#FF2900] leading-tight mb-2">
               Stephanie Bird
             </h1>
             <p className="font-sans text-[11px] font-bold uppercase tracking-[1.6px] text-[#020206] mb-5">
@@ -104,7 +104,7 @@ export default function Resume() {
               Strong writer and documenter who operates autonomously and thinks from first principles.
             </p>
             <div className="flex items-center gap-3 flex-wrap">
-              <span className="font-sans text-[11px] font-bold uppercase tracking-[1.4px] text-[#020206]">801.310.5394</span>
+              <a href="tel:8013105394" className="font-sans text-[11px] font-bold uppercase tracking-[1.4px] text-[#020206] hover:text-[#FF2900] transition-colors">801.310.5394</a>
               <span className="text-[#D0D0D0] select-none">|</span>
               <a
                 href="mailto:stephaniejae.design@gmail.com"
@@ -121,7 +121,7 @@ export default function Resume() {
           <div className="flex flex-col">
             {experience.map((job, i) => (
               <div key={job.company}>
-                <div className="grid gap-8" style={{ gridTemplateColumns: "188px 1fr" }}>
+                <div className="grid gap-4 md:gap-8 md:grid-cols-[188px_1fr]">
                   {/* Left */}
                   <div className="pt-1">
                     <h2 className="font-serif text-[26px] font-bold text-[#FF2900] leading-tight mb-2">
@@ -153,7 +153,7 @@ export default function Resume() {
           </div>
 
           {/* ── Skills ── */}
-          <div className="grid gap-8 mb-8" style={{ gridTemplateColumns: "188px 1fr" }}>
+          <div className="grid gap-4 md:gap-8 mb-8 md:grid-cols-[188px_1fr]">
             <div className="pt-1">
               <p className="font-sans text-[11px] font-bold uppercase tracking-[1.6px] text-[#FF2900]">
                 Skills
@@ -172,7 +172,7 @@ export default function Resume() {
           <hr className="border-[#D0D0D0] mb-8" />
 
           {/* ── Education ── */}
-          <div className="grid gap-8" style={{ gridTemplateColumns: "188px 1fr" }}>
+          <div className="grid gap-4 md:gap-8 md:grid-cols-[188px_1fr]">
             <div className="pt-1">
               <p className="font-sans text-[11px] font-bold uppercase tracking-[1.6px] text-[#FF2900]">
                 Education

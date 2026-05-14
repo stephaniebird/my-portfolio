@@ -25,13 +25,13 @@ export default function McLeod() {
       <Nav />
 
       {/* ── Hero ── */}
-      <section className="bg-white pt-16 pb-0">
+      <section className="bg-white pt-8 md:pt-16 pb-0">
         <div className="max-w-6xl mx-auto px-8">
-          <div className="flex items-end justify-between gap-8 mb-12">
-            <h2 className="font-serif text-[48px] font-bold text-[#020206] leading-[54px] max-w-[680px]">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 md:gap-8 mb-8 md:mb-12">
+            <h2 className="font-serif text-[28px] md:text-[48px] font-bold text-[#020206] leading-tight md:leading-[54px] max-w-[680px]">
               Building a design system from zero for enterprise logistics software
             </h2>
-            <div className="text-right shrink-0">
+            <div className="md:text-right shrink-0">
               <p className="link-label text-[#FF2900]">McLeod Software</p>
               <p className="link-label text-[#FF2900]">Design System Lead</p>
             </div>
@@ -110,7 +110,7 @@ export default function McLeod() {
       </div>
 
       {/* ── Scrollable screenshot ── */}
-      <div className="mx-auto" style={{ width: "954px", maxWidth: "100%", paddingLeft: "40px", paddingRight: "40px" }}>
+      <div className="w-full max-w-[954px] mx-auto px-4 md:px-10">
         <ScrollableImage
           src="/images/mcleod-study-01.jpg"
           alt="McLeod detention definition UI screenshot"
@@ -179,7 +179,7 @@ export default function McLeod() {
       </div>
 
       {/* ── Iconography screenshot ── */}
-      <div className="mx-auto" style={{ width: "954px", maxWidth: "100%", paddingLeft: "40px", paddingRight: "40px" }}>
+      <div className="w-full max-w-[954px] mx-auto px-4 md:px-10">
         <ScrollableImage
           src="/images/mcleod-study-02.jpg"
           alt="McLeod iconography library"
@@ -205,7 +205,7 @@ export default function McLeod() {
       </div>
 
       {/* ── Mitochondria screenshot ── */}
-      <div className="mx-auto" style={{ width: "954px", maxWidth: "100%", paddingLeft: "40px", paddingRight: "40px" }}>
+      <div className="w-full max-w-[954px] mx-auto px-4 md:px-10">
         <ScrollableImage
           src="/images/mcleod-study-03.jpg"
           alt="McLeod Mitochondria component demo"
@@ -250,7 +250,7 @@ export default function McLeod() {
         </section>
 
         {/* Metadata */}
-        <dl className="grid grid-cols-[auto_1fr] gap-x-8 gap-y-3 pt-4 border-t border-[#D0D0D0]">
+        <dl className="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-x-8 gap-y-3 pt-4 border-t border-[#D0D0D0]">
           {metadata.map((item) => (
             <React.Fragment key={item.label}>
               <dt className="font-sans text-[12px] font-bold uppercase tracking-[1.6px] text-[#020206]">

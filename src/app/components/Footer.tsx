@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#020206] text-white mt-auto">
       <div className="max-w-6xl mx-auto px-8 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-        <nav className="flex gap-6" aria-label="Social links">
+        <nav className="flex gap-6 flex-wrap" aria-label="Social links">
           {[
             { label: "LinkedIn", href: "https://www.linkedin.com/in/stephanie-bird-00852328/" },
             { label: "Instagram", href: "https://www.instagram.com/stephaniejae.design" },
