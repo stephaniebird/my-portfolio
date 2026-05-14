@@ -116,7 +116,7 @@ export default function Home() {
                   >
                     {study.title}
                   </h3>
-                  <p className={`font-sans text-[16px] font-normal leading-normal ${study.descColor}`}>
+                  <p className={`font-sans text-[14px] font-normal leading-normal ${study.descColor}`}>
                     {study.description}
                   </p>
                 </div>
