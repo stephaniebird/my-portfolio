@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const caseStudies = [
   { label: "Dunkin' Donuts", href: "/dunkin" },
@@ -47,31 +48,34 @@ export default function Nav() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 bg-white border-b border-[#D0D0D0]">
+      <header className="sticky top-0 z-50 bg-background border-b border-border">
         <div className="max-w-6xl mx-auto px-8 h-16 flex items-center justify-between">
           <a href="/">
-            <h1 className="font-sans text-[18px] font-bold text-[#020206] uppercase tracking-[1.8px] leading-normal">
+            <h1 className="font-sans text-[18px] font-bold text-foreground uppercase tracking-[1.8px] leading-normal">
               Stephanie Jae&nbsp;•&nbsp;Design
             </h1>
           </a>
-          <button
-            aria-label={open ? "Close menu" : "Open menu"}
-            onClick={() => setOpen((v) => !v)}
-            className="cursor-pointer p-1 z-[60] relative"
-          >
-            {open ? (
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <line y1="-1" x2="42.9203" y2="-1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 36 4.5)" stroke="#020206" strokeWidth="2" />
-                <line x1="4.70711" y1="3.79289" x2="35.0563" y2="34.1421" stroke="#020206" strokeWidth="2" />
-              </svg>
-            ) : (
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <line x1="3" y1="9" x2="37" y2="9" stroke="#020206" strokeWidth="2" />
-                <line x1="3" y1="19" x2="37" y2="19" stroke="#020206" strokeWidth="2" />
-                <line x1="3" y1="29" x2="37" y2="29" stroke="#020206" strokeWidth="2" />
-              </svg>
-            )}
-          </button>
+          <div className="flex items-center gap-1">
+            <ThemeToggle />
+            <button
+              aria-label={open ? "Close menu" : "Open menu"}
+              onClick={() => setOpen((v) => !v)}
+              className="cursor-pointer p-1 z-[60] relative text-foreground"
+            >
+              {open ? (
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <line y1="-1" x2="42.9203" y2="-1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 36 4.5)" stroke="currentColor" strokeWidth="2" />
+                  <line x1="4.70711" y1="3.79289" x2="35.0563" y2="34.1421" stroke="currentColor" strokeWidth="2" />
+                </svg>
+              ) : (
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <line x1="3" y1="9" x2="37" y2="9" stroke="currentColor" strokeWidth="2" />
+                  <line x1="3" y1="19" x2="37" y2="19" stroke="currentColor" strokeWidth="2" />
+                  <line x1="3" y1="29" x2="37" y2="29" stroke="currentColor" strokeWidth="2" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
       </header>
 
@@ -84,19 +88,17 @@ export default function Nav() {
         />
       )}
 
-      {/* Slide-in menu */}
+      {/* Slide-in menu — always dark */}
       <nav
         aria-label="Site navigation"
         className={`fixed top-0 right-0 h-full z-50 bg-[#020206] w-[280px] flex flex-col px-6 py-8 gap-6 transition-transform duration-300 ease-in-out ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {/* Home */}
         <a href="/" onClick={() => setOpen(false)} aria-label="Home">
           <HomeIcon />
         </a>
 
-        {/* Case Studies */}
         <div className="flex flex-col gap-3">
           <span className="font-sans text-[10px] font-bold uppercase tracking-[1.6px] text-[#D0D0D0]/60">
             Case Studies
@@ -116,7 +118,6 @@ export default function Nav() {
           ))}
         </div>
 
-        {/* Extras */}
         <div className="flex flex-col gap-3">
           <span className="font-sans text-[10px] font-bold uppercase tracking-[1.6px] text-[#D0D0D0]/60">
             Extras

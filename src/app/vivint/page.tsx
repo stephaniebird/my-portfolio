@@ -18,10 +18,10 @@ export default function Vivint() {
       <Nav />
 
       {/* ── Hero ── */}
-      <section className="bg-white pt-8 md:pt-16 pb-0">
+      <section className="bg-background pt-8 md:pt-16 pb-0">
         <div className="max-w-6xl mx-auto px-8">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 md:gap-8 mb-8 md:mb-12">
-            <h2 className="font-serif text-[28px] md:text-[48px] font-bold text-[#020206] leading-tight md:leading-[54px] max-w-[680px]">
+            <h2 className="font-serif text-[28px] md:text-[48px] font-bold text-foreground leading-tight md:leading-[54px] max-w-[680px]">
               Rebuilding a flagship e-commerce experience — one A/B test at a time
             </h2>
             <div className="md:text-right shrink-0">
@@ -48,11 +48,11 @@ export default function Vivint() {
       {/* ── Content: Overview ── */}
       <div className="max-w-[760px] mx-auto px-8 pt-20 pb-16 flex flex-col gap-16">
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             Overview
           </h3>
           <div className="flex flex-col gap-4">
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               Vivint brought me on after a failed website rebrand with an outside agency had tanked
               conversion rates. The team realized they needed a dedicated in-house UX designer to
               salvage the project. I was hired as the sole UX designer on a cross-functional team,
@@ -60,7 +60,7 @@ export default function Vivint() {
               development, and analytics to revive vivint.com as the primary lead-generation engine
               for the National Inside Sales (NIS) team.
             </p>
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               I led the design through many months of iterative redesign work: covering a failed
               rebrand, leading two full brand refreshes, establishing a component-based design
               system, and running continuous A/B testing to validate every change before it shipped.
@@ -81,11 +81,11 @@ export default function Vivint() {
       <div className="max-w-[760px] mx-auto px-8 py-16 flex flex-col gap-16">
 
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             Context &amp; Challenge
           </h3>
           <div className="flex flex-col gap-4">
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               When I joined Vivint, the website was in recovery mode. A recent rebrand attempt had
               gone live without sufficient testing, and the result was an immediate and significant
               drop in leads and sales — a major problem for a company where vivint.com is the
@@ -93,7 +93,7 @@ export default function Vivint() {
               happen, but the previous approach — ship everything at once and hope for the best —
               had proven catastrophic.
             </p>
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               Compounding the challenge, Vivint operated in an emerging category. Smart home
               security was still new enough that most visitors arrived at the site without a clear
               understanding of what the product did or why they needed it. Every design decision had
@@ -117,16 +117,16 @@ export default function Vivint() {
       <div className="max-w-[760px] mx-auto px-8 py-16 pb-20 flex flex-col gap-16">
 
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             The Core Problem
           </h3>
           <div className="flex flex-col gap-4">
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               How do you successfully rebrand a high-traffic e-commerce site without losing the
               leads and sales that fund the business? And how do you educate a customer base on an
               unfamiliar product category without overwhelming them with information?
             </p>
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               In 2020, Vivint launched a major corporate rebrand — shifting from &ldquo;Vivint Smart
               Home&rdquo; to simply &ldquo;Vivint.&rdquo; The homepage and all major components
               needed to reflect the new brand, but the team couldn&apos;t afford a repeat of the
@@ -137,11 +137,11 @@ export default function Vivint() {
         </section>
 
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             Solution
           </h3>
           <div className="flex flex-col gap-4">
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               I rebuilt the site one component at a time, using A/B testing as the gate for every
               meaningful change. Instead of a big-bang rebrand, I worked closely with the CRO team
               to test new versions of hero modules, product cards, navigation, and CTAs against
@@ -149,7 +149,7 @@ export default function Vivint() {
               significance and positive performance. This methodical approach meant the full rebrand
               rolled out over six months, but with zero negative impact to leads.
             </p>
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               I also partnered with the copy team to develop a stronger user narrative, aligning
               visual design with messaging that better addressed customer uncertainty about the
               smart home category. Toward the end of 2021, we tested two new video components
@@ -159,10 +159,10 @@ export default function Vivint() {
         </section>
 
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             Design System
           </h3>
-          <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+          <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
             Beyond individual campaigns, I own and maintain the component library for vivint.com.
             Every component is built in Figma with auto-layout, documented with usage notes, and
             organized by page module type and product category. This system makes it possible to
@@ -174,17 +174,17 @@ export default function Vivint() {
         </section>
 
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             Results
           </h3>
           <div className="flex flex-col gap-4">
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               The rebrand rolled out successfully over six months with no decline in leads or sales
               — a direct reversal of the previous agency-led attempt. The video component test
               delivered a 21.5% lift in conversion rate, moving from 1.09% to 1.33% within days of
               launch.
             </p>
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               More broadly, the shift from big-bang redesigns to component-level A/B testing
               fundamentally changed how the team approached website changes. Every update now runs
               through validation before shipping, and the design system ensures consistency across
@@ -196,13 +196,13 @@ export default function Vivint() {
         </section>
 
         {/* Metadata */}
-        <dl className="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-x-8 gap-y-3 pt-4 border-t border-[#D0D0D0]">
+        <dl className="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-x-8 gap-y-3 pt-4 border-t border-border">
           {metadata.map((item) => (
             <React.Fragment key={item.label}>
-              <dt className="font-sans text-[12px] font-bold uppercase tracking-[1.6px] text-[#020206]">
+              <dt className="font-sans text-[12px] font-bold uppercase tracking-[1.6px] text-foreground">
                 {item.label}
               </dt>
-              <dd className="font-sans text-[12px] font-normal text-[#020206]">
+              <dd className="font-sans text-[12px] font-normal text-foreground">
                 {item.value}
               </dd>
             </React.Fragment>

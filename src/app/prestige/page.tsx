@@ -25,10 +25,10 @@ export default function Prestige() {
       <Nav />
 
       {/* ── Hero ── */}
-      <section className="bg-white pt-8 md:pt-16 pb-0">
+      <section className="bg-background pt-8 md:pt-16 pb-0">
         <div className="max-w-6xl mx-auto px-8">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 md:gap-8 mb-8 md:mb-12">
-            <h2 className="font-serif text-[28px] md:text-[48px] font-bold text-[#020206] leading-tight md:leading-[54px] max-w-[680px]">
+            <h2 className="font-serif text-[28px] md:text-[48px] font-bold text-foreground leading-tight md:leading-[54px] max-w-[680px]">
               Unifying six tools into one workflow for a $1.1B collections operation
             </h2>
             <div className="md:text-right shrink-0">
@@ -56,11 +56,11 @@ export default function Prestige() {
 
         {/* Overview */}
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             Overview
           </h3>
           <div className="flex flex-col gap-4">
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               Prestige Financial Services was an auto-finance debt collection agency servicing over
               43,000 accounts valued at more than $1 billion. Their collection agents worked across
               a fragmented ecosystem of six-plus legacy tools to manage calls, messaging, payments,
@@ -69,7 +69,7 @@ export default function Prestige() {
               internal case management application that would replace this sprawl with a unified,
               intelligent workflow.
             </p>
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               This case study covers the end-to-end UX process: contextual research in a live call
               center, synthesis and persona development, design and usability testing, and the
               organizational realities of advocating for user needs against competing business
@@ -80,25 +80,25 @@ export default function Prestige() {
 
         {/* Context & Challenge */}
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             Context &amp; Challenge
           </h3>
           <div className="flex flex-col gap-4">
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               Collection agents at Prestige worked accounts across multiple delinquency stages —
               from 0-29 days past due through accounts headed toward repossession. Their daily work
               involved a demanding mix of outbound calls, inbound responses, text messaging, email,
               and payment processing, all while navigating strict compliance requirements around
               disclosures, contact frequency, and opt-outs.
             </p>
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               The problem was that no single tool supported this workflow. Agents routinely operated
               across six or more applications simultaneously: Phoenix (core account system), MuTrak
               (phone system), Invotra (messaging), TalkDesk (another phone system), Word (letter
               templates), and Power BI (reporting). Each held a piece of the picture; none provided
               the full view an agent needed to efficiently work an account.
             </p>
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               Compounding the challenge, the business was facing a scalability crisis. The existing
               spread of siloed systems, manual spreadsheets, and inconsistent information couldn&apos;t
               support the planned growth from 100 to 500+ serviced accounts. Employee turnover made
@@ -123,10 +123,10 @@ export default function Prestige() {
 
         {/* The Core Problem */}
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             The Core Problem
           </h3>
-          <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+          <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
             Agents were skilled communicators buried under fragmented tools, redundant processes,
             and information noise. The system needed to get out of their way so they could focus on
             what they did best: resolving accounts through human conversation.
@@ -135,11 +135,11 @@ export default function Prestige() {
 
         {/* Discovery & Research */}
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             Discovery &amp; Research
           </h3>
           <div className="flex flex-col gap-4">
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               Given the complexity of this domain, I knew surveys or interviews alone wouldn&apos;t
               capture the full picture — I needed to see how agents actually worked, not just how
               they described their work. I prioritized contextual inquiry and job shadowing as the
@@ -147,7 +147,7 @@ export default function Prestige() {
               outbound (ICT) and inbound (INT) teams. I also conducted swim-lane/journey mapping
               with agents, team leads, and training staff.
             </p>
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               The research surfaced insights that self-reporting never would have. Agents routinely
               had multiple applications open simultaneously, switching contexts almost constantly.
               The notes feature in Phoenix, universally described as the most important part of the
@@ -173,18 +173,18 @@ export default function Prestige() {
 
         {/* Navigating Business Constraints */}
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             Navigating Business Constraints
           </h3>
           <div className="flex flex-col gap-4">
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               Throughout the project, there was recurring tension between what research indicated
               would best serve agents and what the business was willing to implement. The research
               strongly supported a user-driven approach — customizable views, flexible queue
               management, agent-controlled templates. While leadership preferred a more controlled,
               streamlined experience.
             </p>
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               In retrospect, I would have involved business stakeholders in research sessions from
               earlier, having leadership observe agents struggling with workarounds firsthand —
               rather than presenting findings in a slide deck after the fact. Building shared
@@ -208,11 +208,11 @@ export default function Prestige() {
 
         {/* Outcomes & Reflection */}
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             Outcomes &amp; Reflection
           </h3>
           <div className="flex flex-col gap-4">
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               The project delivered a research-informed design that addressed the core pain points
               identified through contextual inquiry, synthesis, and usability testing. Prestige
               ultimately closed its operations before the full vision could ship, but the work
@@ -226,13 +226,13 @@ export default function Prestige() {
         </section>
 
         {/* Metadata */}
-        <dl className="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-x-8 gap-y-3 pt-4 border-t border-[#D0D0D0]">
+        <dl className="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-x-8 gap-y-3 pt-4 border-t border-border">
           {metadata.map((item) => (
             <React.Fragment key={item.label}>
-              <dt className="font-sans text-[12px] font-bold uppercase tracking-[1.6px] text-[#020206]">
+              <dt className="font-sans text-[12px] font-bold uppercase tracking-[1.6px] text-foreground">
                 {item.label}
               </dt>
-              <dd className="font-sans text-[12px] font-normal text-[#020206]">
+              <dd className="font-sans text-[12px] font-normal text-foreground">
                 {item.value}
               </dd>
             </React.Fragment>

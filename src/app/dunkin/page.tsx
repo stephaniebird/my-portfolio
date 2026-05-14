@@ -19,10 +19,10 @@ export default function Dunkin() {
       <Nav />
 
       {/* ── Hero ── */}
-      <section className="bg-white pt-8 md:pt-16 pb-0">
+      <section className="bg-background pt-8 md:pt-16 pb-0">
         <div className="max-w-6xl mx-auto px-8">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 md:gap-8 mb-8 md:mb-12">
-            <h2 className="font-serif text-[28px] md:text-[48px] font-bold text-[#020206] leading-tight md:leading-[54px] max-w-[680px]">
+            <h2 className="font-serif text-[28px] md:text-[48px] font-bold text-foreground leading-tight md:leading-[54px] max-w-[680px]">
               A unified training platform for 12,000+ franchise locations
             </h2>
             <div className="md:text-right shrink-0">
@@ -50,11 +50,11 @@ export default function Dunkin() {
 
         {/* Overview */}
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             Overview
           </h3>
           <div className="flex flex-col gap-4">
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               Dunkin&apos; Donuts needed a centralized training platform to serve employees across
               their franchise network. Their existing training site was disorganized, difficult to
               navigate, and not built to scale. The challenge was made more complex by the need to
@@ -64,7 +64,7 @@ export default function Dunkin() {
               individual brand locations, combination stores, and multiple levels of franchise
               ownership.
             </p>
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               This case study covers the UI design process across a six-month engagement: defining
               the information architecture for three branded experiences, designing role-based views
               for employees and franchisees, and validating the approach through user testing.
@@ -74,10 +74,10 @@ export default function Dunkin() {
 
         {/* Context & Challenge */}
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             Context &amp; Challenge
           </h3>
-          <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+          <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
             Franchise employees at Dunkin&apos; Donuts needed to access required training at any
             point during their shift — video modules, step-by-step recipes, and equipment
             maintenance procedures. But the existing platform treated all users the same, regardless
@@ -102,18 +102,18 @@ export default function Dunkin() {
 
         {/* The Core Problem */}
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             The Core Problem
           </h3>
           <div className="flex flex-col gap-4">
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               Employees needed fast, frictionless access to training content that was relevant to
               their brand, their role, and their current task. The existing system buried that
               content behind a one-size-fits-all interface that didn&apos;t reflect how franchise
               operations actually worked — and it certainly didn&apos;t scale across the three
               distinct branded experiences the business required.
             </p>
-            <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+            <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
               The scope also grew significantly over the six-month engagement. What began as an
               employee training redesign expanded to include franchisee-specific views and tiered
               ownership levels, each with different content needs and permissions.
@@ -135,10 +135,10 @@ export default function Dunkin() {
 
         {/* Solution */}
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             Solution
           </h3>
-          <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+          <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
             Across three branded training experiences (Dunkin&apos; Donuts, Baskin Robbins, and a
             combined experience), we designed a centralized dashboard that gave users everything
             they needed in one place: an upcoming training agenda, new and trending content
@@ -162,10 +162,10 @@ export default function Dunkin() {
 
         {/* Results */}
         <section>
-          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-[#020206] mb-6">
+          <h3 className="font-serif text-[28px] font-normal leading-[32px] text-foreground mb-6">
             Results
           </h3>
-          <p className="font-sans text-[16px] font-normal leading-relaxed text-[#020206]">
+          <p className="font-sans text-[16px] font-normal leading-relaxed text-foreground">
             User testing with a small sample validated that the training modules and overall
             experience were effective and easy to navigate. The proof of concept was completed for
             all three branded experiences, the combination flow, and the individual Dunkin&apos;
@@ -175,13 +175,13 @@ export default function Dunkin() {
         </section>
 
         {/* Metadata */}
-        <dl className="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-x-8 gap-y-3 pt-4 border-t border-[#D0D0D0]">
+        <dl className="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-x-8 gap-y-3 pt-4 border-t border-border">
           {metadata.map((item) => (
             <React.Fragment key={item.label}>
-              <dt className="font-sans text-[12px] font-bold uppercase tracking-[1.6px] text-[#020206]">
+              <dt className="font-sans text-[12px] font-bold uppercase tracking-[1.6px] text-foreground">
                 {item.label}
               </dt>
-              <dd className="font-sans text-[12px] font-normal text-[#020206]">
+              <dd className="font-sans text-[12px] font-normal text-foreground">
                 {item.value}
               </dd>
             </React.Fragment>

@@ -8,11 +8,11 @@ const caseStudies = [
     title: "Multi-Product Logistics Design System",
     description:
       "From no reusable components to a fully usable component library across a multi-product logistics ecosystem, for one single-source of truth.",
-    bg: "bg-[#D0D0D0]",
-    titleColor: "text-[#020206]",
-    descColor: "text-[#020206]",
-    readMoreColor: "text-[#020206]",
-    arrowStroke: "#020206",
+    bg: "bg-card",
+    titleColor: "text-foreground",
+    descColor: "text-foreground",
+    readMoreColor: "text-foreground",
+
     image: "/images/mcleod-home.png",
     imageAlt: "McLeod logistics design system screenshot",
     href: "/mcleod",
@@ -26,7 +26,7 @@ const caseStudies = [
     titleColor: "text-white",
     descColor: "text-white/80",
     readMoreColor: "text-white",
-    arrowStroke: "#ffffff",
+
     image: "/images/dunkin-home.png",
     imageAlt: "Dunkin training platform mobile screens",
     href: "/dunkin",
@@ -36,18 +36,18 @@ const caseStudies = [
     title: "Internal Case Management Application",
     description:
       "This case study walks through the end-to-end UX process: from contextual research in a live call center environment through synthesis, design, and usability testing.",
-    bg: "bg-[#D0D0D0]",
-    titleColor: "text-[#020206]",
-    descColor: "text-[#020206]",
-    readMoreColor: "text-[#020206]",
-    arrowStroke: "#020206",
+    bg: "bg-card",
+    titleColor: "text-foreground",
+    descColor: "text-foreground",
+    readMoreColor: "text-foreground",
+
     image: "/images/prestige-home.png",
     imageAlt: "Prestige case management application screenshot",
     href: "/prestige",
   },
 ];
 
-function ArrowCircleIcon({ stroke }: { stroke: string }) {
+function ArrowCircleIcon() {
   return (
     <svg
       width="32"
@@ -59,7 +59,7 @@ function ArrowCircleIcon({ stroke }: { stroke: string }) {
     >
       <path
         d="M16.0001 21.3337L21.3334 16.0003M21.3334 16.0003L16.0001 10.667M21.3334 16.0003L10.6667 16.0003M29.3334 16.0003C29.3334 23.3641 23.3639 29.3337 16.0001 29.3337C8.63628 29.3337 2.66675 23.3641 2.66675 16.0003C2.66675 8.63653 8.63628 2.66699 16.0001 2.66699C23.3639 2.66699 29.3334 8.63653 29.3334 16.0003Z"
-        stroke={stroke}
+        stroke="currentColor"
         strokeWidth="3"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -74,13 +74,13 @@ export default function Home() {
       <Nav />
 
       {/* ── Hero ── */}
-      <section className="bg-white">
+      <section className="bg-background">
         <div className="max-w-6xl mx-auto px-8 py-12 md:py-20 flex flex-col md:flex-row md:items-start md:justify-between gap-8 md:gap-12">
           <div>
             <h2 className="font-serif text-[36px] md:text-[56px] font-normal text-[#FF2900] mb-5 leading-tight md:leading-normal md:whitespace-nowrap">
               Senior Product Designer
             </h2>
-            <p className="font-serif text-[16px] md:text-[18px] font-light text-[#020206] leading-normal w-full">
+            <p className="font-serif text-[16px] md:text-[18px] font-light text-foreground leading-normal w-full">
               8+ years designing complex enterprise tools people actually have to
               use every day — logistics platforms, fintech systems, IoT
               workflows. I specialize in design systems, accessibility, and
@@ -101,7 +101,7 @@ export default function Home() {
       </section>
 
       {/* ── Case Studies ── */}
-      <section className="bg-[#F0F0F0] py-16">
+      <section className="bg-surface py-16">
         <div className="max-w-6xl mx-auto px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {caseStudies.map((study) => (
@@ -137,8 +137,8 @@ export default function Home() {
                   >
                     Read More
                   </span>
-                  <span className="group-hover:translate-x-1 transition-transform">
-                    <ArrowCircleIcon stroke={study.arrowStroke} />
+                  <span className={`group-hover:translate-x-1 transition-transform ${study.readMoreColor}`}>
+                    <ArrowCircleIcon />
                   </span>
                 </div>
               </a>
