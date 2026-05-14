@@ -23,6 +23,8 @@ export const metadata: Metadata = {
 
 const themeScript = `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})()`;
 
+const cssVariables = `:root{--background:#ffffff;--foreground:#020206;--surface:#F0F0F0;--card:#D0D0D0;--muted:#D0D0D0;--border:#D0D0D0}.dark{--background:#0f172a;--foreground:#f1f5f9;--surface:#1e293b;--card:#334155;--muted:#94a3b8;--border:#334155}`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -36,6 +38,7 @@ export default function RootLayout({
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <style dangerouslySetInnerHTML={{ __html: cssVariables }} />
       </head>
       <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
